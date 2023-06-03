@@ -5,6 +5,7 @@
 
 
 void PrintArray()
+
 {
     int[] numbers = new int[8];
     for (int i = 0; i < numbers.Length; i++)
@@ -18,4 +19,5 @@ void PrintArray()
     }
 
 }
+ int[] numbers = new int[8];
 PrintArray();
