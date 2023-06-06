@@ -27,7 +27,7 @@ void PositivNum(int[] array)
         if (array[i] % 2 == 0)
             count += 1;
     }
-    System.Console.WriteLine(count);
+    System.Console.WriteLine($"Количество чётных чисел в массиве = {count}");
 }
 
 
