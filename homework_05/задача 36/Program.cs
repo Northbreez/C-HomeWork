@@ -28,7 +28,7 @@ void SumNechetyIndex(int[] array)
         sum += array[i];
         i += 2;
     }
-    System.Console.WriteLine(sum);
+    System.Console.WriteLine($"Cумма элементов, стоящих на нечётных индексах массива = {sum}");
 }
 
 Console.Clear();
