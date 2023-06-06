@@ -19,5 +19,5 @@ void PrintArray()
     }
 
 }
- int[] numbers = new int[8];
+int[] numbers = new int[8];
 PrintArray();
