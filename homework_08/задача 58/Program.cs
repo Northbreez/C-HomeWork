@@ -55,7 +55,6 @@ Console.Clear();
 int[,]matrix = new int [2, 2];
 int [,]matrix1 = FillArray(matrix);
 int [,]matrix2 = FillArray(matrix);
-int[,]multiplying;
 PrintArray(matrix1);
 PrintArray(matrix2);
 PrintArray(Multiplying(matrix1, matrix2));
