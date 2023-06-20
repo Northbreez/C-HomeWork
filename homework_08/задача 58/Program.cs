@@ -6,18 +6,17 @@
 // 18 20
 // 15 18
 
-int[,] FillArray(int row, int colomn)
+int[,] FillArray(int[,]matrix)
 {
-    int[,] matrix = new int[row, colomn];
-
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++)
+        for (int i = 0; i < matrix.GetLength(0); i++)
         {
-            matrix[i, j] = new Random().Next(1, 10);
+            for (int j = 0; j < matrix.GetLength(1); j++)
+            {
+                matrix[i, j] = new Random().Next(1, 10);
+            }
         }
-    }
-    return matrix;
+    return matrix;    
+  
 }
 
 
@@ -53,12 +52,9 @@ int[,] Multiplying(int[,] matrix1, int[,] matrix2)
 
 
 Console.Clear();
-System.Console.WriteLine("Введите количество строк:");
-int row = Convert.ToInt32(Console.ReadLine());
-System.Console.WriteLine("Введите количество столбцов:");
-int colomn = Convert.ToInt32(Console.ReadLine());
-int[,]matrix1 = FillArray(row, colomn);
-int[,]matrix2 = FillArray(row, colomn);
+int[,]matrix = new int [2, 2];
+int [,]matrix1 = FillArray(matrix);
+int [,]matrix2 = FillArray(matrix);
 int[,]multiplying;
 PrintArray(matrix1);
 PrintArray(matrix2);
