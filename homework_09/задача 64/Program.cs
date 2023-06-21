@@ -3,22 +3,9 @@
 // N = 5 -> "5, 4, 3, 2, 1"
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
-string GetNumbers(int num)
-{
-    string str = "";
-    while (true)
-    {
-        str = Convert.ToString(num) + " " + str;
-        num--;
-        if (num == 0)
-            break;
-    }
-    return str;
-}
-
 string GetNumbersRec(int num)
 {
-    if (num == 0) return "";
+    if (num == 0) return "  ";
     return num + "  " + GetNumbersRec(num - 1);
 }
 
